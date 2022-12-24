@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-</head>
-
 <body>
     <section class="hero">
-        
+        <div class="container">
+            <h1 class="hero-title title">ice cream made with PASSION</h1>
+            <button class="hero_button" type="button">Products</button>
+            <a href="">How it’s made?</a>
+            <img src="./images/hero-ice-177.png" srcset="
+                ./images/hero-ice-177.png     177w,
+                ./images/hero-ice-177@2x.png  354w,
+                ./images/hero-ice-268.png     268w,
+                ./images/hero-ice-268@2x.png  536w,
+                ./images/hero-ice-456.png     456w,
+                ./images/hero-ice-456@2x.png  912w"
+            sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, (min-width: 480px) 177px, 100vw" alt="Ice cream cones">
+        </div>
     </section>
 </body>
 

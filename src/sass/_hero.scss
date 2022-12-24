@@ -1,0 +1,25 @@
+.container {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 768px
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px
+    }
+}
+.hero-title{
+    font-family: "Seymour One";
+    font-weight: 400;
+    color: #FCFCFC;
+    margin: 0 auto;
+    max-width: 247px;
+    font-size: 26px;
+    line-height: 1.25;
+}
