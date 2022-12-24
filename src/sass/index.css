@@ -1,3 +1,4 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
 html {
   box-sizing: border-box;
 }
@@ -33,7 +34,7 @@ ul {
 body {
   background-color: var(--background-colour);
   color: var(--main-text-colour);
-  font-family: Roboto, sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 a {
@@ -46,9 +47,9 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .container {
-    width: 480px;
+    width: 320px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -60,4 +61,13 @@ a {
   .container {
     width: 1200px;
   }
-}/*# sourceMappingURL=base.css.map */
+}
+
+:root {
+  --primary-text-colour: #fcfcfc;
+  --tittle-text-colour: #131313;
+  --accent-text-colour: #0a8817;
+  --background-colour: #84a178;
+  --background-item-colour: #f8d24e;
+  --location-text-colour: #d6936d;
+}/*# sourceMappingURL=index.css.map */
