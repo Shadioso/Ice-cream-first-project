@@ -67,20 +67,23 @@
   margin-right: auto;
   width: 100%;
   border-radius: 8px;
-  transform: translateY(-32px);
+  // transform: translateY(-32px);
+  margin-top: -32px;
   margin-bottom: 80px;
 
   @media screen and (min-width: 768px) {
     width: 704px;
     border-radius: 18px;
-    transform: translateY(-144px);
+    // transform: translateY(-144px);
+    margin-top: -144px;
     margin-bottom: 100px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1013px;
     border-radius: 24px;
-    transform: translateY(-98px);
+    // transform: translateY(-98px);
+    margin-top: -98px;
     margin-bottom: 140px;
   }
 }
