@@ -25,11 +25,19 @@
 }
 
 .footer__card {
-  width: 280px;
+  width: 100%;
   padding: 40px 32px 32px 24px;
   background: #fcfcfc;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+
+  &:not(:last-child){
+    margin-bottom: 16px;
+  }
+
+  &:first-child{
+    margin-top: -353px;
+  }
 }
 
 .footer__category {
@@ -43,6 +51,10 @@
   border-radius: 4px;
   padding: 4px 22px;
   margin-bottom: 20px;
+}
+
+.footer__foodtruck{
+    padding: 4px 14px;
 }
 
 .footer__cardtitle {
@@ -92,4 +104,10 @@
   font-size: 12px;
   line-height: 1.58;
   color: #131313;
+}
+
+.footer__tel{
+    display: inline-block;
+    margin-top: 24px;
+    margin-bottom: 6px;
 }
