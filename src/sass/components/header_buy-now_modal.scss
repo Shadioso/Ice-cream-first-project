@@ -1,0 +1,38 @@
+.header-svg {
+  fill: var(--background-item-colour);
+}
+
+.menu-burger {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 100;
+}
+
+.menu-burger .icon-close {
+  display: none;
+}
+
+.menu-burger.is-open .icon-close {
+  display: block;
+}
+
+.menu-burger.is-open .icon-burger {
+  display: none;
+}
+
+.menu-container {
+  // display: none;
+  // position: absolute;
+  top: 0;
+  width: 320px;
+  height: 568px;
+  background-color: transparent;
+  z-index: 99;
+
+  &.is-open {
+    display: block;
+  }
+}
