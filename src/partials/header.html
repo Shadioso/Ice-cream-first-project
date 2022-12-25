@@ -1,24 +1,24 @@
-<svg class="header-svg" width="40" height="37">
-  <use class="logo-svg" href="./images/burger.svg#icon-logo"></use>
-</svg>
-<button
-  type="button"
-  class="menu-burger"
-  aria-expanded="false"
-  aria-controls="menu-container"
-  data-menu-button
-  aria-label="перемикач мобільного меню"
->
-  <svg class="icon-header" width="32" height="32">
-    <use class="icon-burger" href="./images/burger.svg#icon-burger"></use>
-    <use class="icon-close" href="./images/burger.svg#icon-close"></use>
-  </svg>
-</button>
-<div class="menu-container" id="menu-container" data-menu>
-  <ul class="mobil-menu">
-    <li class="menu-nav"><a href="" class="navigation">Home</a></li>
-    <li class="menu-nav"><a href="" class="navigation"></a>How it’s made?</li>
-    <li class="menu-nav"><a href="" class="navigation"></a>Our products</li>
-    <li class="menu-nav"><a href="" class="navigation"></a>Contact</li>
-  </ul>
-</div>
+<section class="container">
+  <div class="mobile-menu">
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button
+        aria-label="перемикач мобільного меню">
+        <svg class="icon-header" width="32" height="32">
+          <use class="icon-burger" href="./images/burger.svg#icon-burger"></use>
+          <use class="icon-close" href="./images/burger.svg#icon-close"></use>
+        </svg>
+      </button>
+    <div class="menu-container" id="menu-container" data-menu>
+      <ul class="menu">
+        <li class="menu-nav"><a href="./index.html" class="navigation">Home</a></li>
+        <li class="menu-nav"><a href="./index.html" class="navigation">How it’s made?</a></li>
+        <li class="menu-nav"><a href="./index.html" class="navigation">Our products</a></li>
+        <li class="menu-nav"><a href="./index.html" class="navigation">Contact</a></li>
+      </ul>
+      <button type="button" class="button-by">Buy now
+        <svg width="12" height="12">
+          <use class="logo-by" href="./images/burger.svg#icon-button"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>

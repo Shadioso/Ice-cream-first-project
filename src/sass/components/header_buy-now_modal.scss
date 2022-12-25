@@ -1,38 +1,95 @@
-.header-svg {
-  fill: var(--background-item-colour);
+.mobile-menu {
+  width: 320px;
+  height: auto;
 }
 
-.menu-burger {
+.header-svg {
+  fill: var(--background-item-colour);
+  margin-top: 12px;
+}
+
+.menu-button {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: inline-flex;
-  margin: 0;
+  margin-right: 20px;
+  margin-top: 17px;
   padding: 0;
   border: none;
   background-color: transparent;
   z-index: 100;
-}
 
-.menu-burger .icon-close {
-  display: none;
-}
+  & .icon-close {
+    display: none;
+  }
 
-.menu-burger.is-open .icon-close {
-  display: block;
-}
-
-.menu-burger.is-open .icon-burger {
-  display: none;
-}
-
-.menu-container {
-  // display: none;
-  // position: absolute;
-  top: 0;
-  width: 320px;
-  height: 568px;
-  background-color: transparent;
-  z-index: 99;
-
-  &.is-open {
+  &.is-open .icon-close {
     display: block;
+  }
+
+  &.is-open .icon-burger {
+    display: none;
+  }
+}
+
+// .menu-container {
+//   display: none;
+//   position: absolute;
+//   width: 320px;
+//   height: 568px;
+//   background-color: transparent;
+//   z-index: 99;
+
+//   &.is-open {
+//     display: block;
+//   }
+// }
+
+.menu {
+  margin-top: 100px;
+}
+
+.menu-nav {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.22;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--primary-text-colour);
+  margin-bottom: 32px;
+  justify-content: center;
+
+  &.menu-nav:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.button-by {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 152px;
+  height: 42px;
+  background-color: var(--background-item-colour);
+  border-radius: 10px;
+  border: none;
+  margin-top: 110px;
+  margin-bottom: 64px;
+  margin-left: 84px;
+}
+
+.navigation {
+  color: var(--primary-text-colour);
+
+  &:hover {
+    color: var(--tittle-text-colour);
   }
 }
