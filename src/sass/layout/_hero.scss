@@ -1,0 +1,93 @@
+.hero{
+    &-container{
+        position: relative;
+    }
+    &-title {
+        font-family: "Seymour One";
+        font-weight: 400;
+        color: var(--primary-text-colour);
+        text-transform: uppercase;
+        max-width: 247px;
+        font-size: 26px;
+        line-height: 1.25;
+        letter-spacing: 0.04em;
+        margin-top: 50px;
+        @media screen and (max-width: 1199px){
+            &--bold{
+                font-size: 34px;
+                line-height: 0.965;
+            }
+        }
+        @media screen and (min-width: 1200px){
+            font-size: 38px;
+            line-height: 1.26;
+            max-width: 367px;
+        }
+    }
+    
+    &_button{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 108px;
+        height: 38px;
+        color: var(--tittle-text-colour);
+        background-color: transparent;
+        border: 2px solid var(--background-item-colour);
+        border-radius: 8px;
+        &:hover{
+            border: 2px solid var(--accent-text-colour);
+        }
+        @media screen and (min-width: 1200px) {
+            width: 134px;
+            height: 42px;
+            &:focus{
+                color: var(--primary-text-colour);
+            }
+            &:disabled{
+                border: 2px solid #ABABAB;
+            }
+        }
+    }
+    &_link{
+        margin-left: 12px;
+        text-decoration: underline;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        color: var(--background-item-colour);
+        @media screen and (min-width: 768px) {
+            margin-left: 21px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-left: 34px;
+        }
+    }
+    &_content-image{
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
+        @media screen and (min-width: 1200px) {
+            
+        }
+    }
+    &_image{
+        margin-left: 65px;
+        margin-top: 19px;
+        @media screen and (min-width: 768px){
+            margin-left: 376px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-left: 636px;
+        }
+    }
+}
