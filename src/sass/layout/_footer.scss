@@ -1,0 +1,16 @@
+.footer__title{
+margin: 0;
+font-size: 30px;
+line-height: 1.23;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: var(--primary-text-colour);
+
+&--size{
+	margin-top: 14px;
+	font-weight: 700;
+	font-size: 58px;
+	line-height: 1.22;
+	letter-spacing: 0.06em;
+}
+}
