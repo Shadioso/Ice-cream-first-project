@@ -178,6 +178,17 @@ a {
   width: 34px;
   height: 34px;
   border-radius: 50%;
+  background-color: #F8D24E;
+}
+
+.footer-social__icon {
+  fill: #84A178;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-social__icon:hover, .footer-social__icon:focus {
+  fill: #FCFCFC;
 }
 
 .footer-contact__wrapper {

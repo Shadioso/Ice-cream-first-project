@@ -71,15 +71,26 @@
 	}
  }
  
- .footer-social__link {
+.footer-social__link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 34px;
 	height: 34px;
 	border-radius: 50%;
+	background-color: #F8D24E;
+	
  }
  
+.footer-social__icon{
+fill:  #84A178;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus{
+ fill:  #FCFCFC;
+  }
+ }
 
  .footer-contact__wrapper{
 	display: inline-flex;
