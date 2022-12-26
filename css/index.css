@@ -112,11 +112,13 @@ a {
     font-size: 26px;
     line-height: 1.23;
     letter-spacing: 0.04em;
+    width: 352px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__title {
     font-size: 30px;
+    width: 504px;
   }
 }
 .footer__title--size {
@@ -137,6 +139,8 @@ a {
     font-size: 48px;
     line-height: 1.23;
     letter-spacing: 0.06em;
+    width: 352px;
+    margin-right: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -144,6 +148,7 @@ a {
     margin-top: 14px;
     font-size: 58px;
     line-height: 1.22;
+    width: 504px;
   }
 }
 
@@ -220,6 +225,13 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer-thumb {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer-contact__text {
