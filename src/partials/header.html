@@ -1,8 +1,8 @@
 <section class="container">
   <div class="mobile-menu">
     <button
-      class="menu-button"
       type="button"
+      class="menu-button"
       aria-expanded="false"
       aria-controls="menu-container"
       data-menu-button
@@ -11,6 +11,15 @@
       <svg class="icon-header" width="32" height="32">
         <use class="icon-burger" href="./images/burger.svg#icon-burger"></use>
         <use class="icon-close" href="./images/burger.svg#icon-close"></use>
+      </svg>
+    </button>
+    <button type="button" class="button-by-header">
+      Buy now
+      <svg width="12" height="12">
+        <use
+          class="logo-by-header"
+          href="./images/burger.svg#icon-button"
+        ></use>
       </svg>
     </button>
     <div class="menu-container" id="menu-container" data-menu>
@@ -42,7 +51,9 @@
     <h1 class="title">Buy now</h1>
     <ul>
       <li>
+        <div class="cream group">
         <img
+        class="images"
           srcset="
             ../src/images/img1_1x132.png 132w,
             ../src/images/img1_2x264.png 264w
@@ -51,10 +62,12 @@
           width="132"
           height="139"
         />
-        <div class="cream group"></div>
+        </div>
       </li>
       <li>
+        <div class="coffee group">
         <img
+        class="images"
           srcset="
             ../src/images/img2_1x132.png 132w,
             ../src/images/img2_2x264.png 264w
@@ -63,10 +76,12 @@
           width="132"
           height="139"
         />
-        <div class="coffee group"></div>
+        </div>
       </li>
       <li>
+        <div class="milkshake group">
         <img
+        class="images"
           srcset="
             ../src/images/img3_1x132.png 132w,
             ../src/images/img3_2x.png    264w
@@ -75,7 +90,7 @@
           width="132"
           height="139"
         />
-        <div class="milkshake group"></div>
+        </div>
       </li>
     </ul>
     <form>
@@ -107,6 +122,12 @@
           placeholder="Comment"
         ></textarea>
       </div>
+      <button class="agree" type="submit">Submit</button>
+      <button class="close-sing" data-modal-close>
+        <svg class="close" width="20" height="20">
+          <use href="./images/burger.svg#icon-modal-close"></use>
+        </svg>
+      </button>
     </form>
   </div>
 </div>

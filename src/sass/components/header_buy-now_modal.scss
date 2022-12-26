@@ -33,18 +33,44 @@
   }
 }
 
-// .menu-container {
-//   display: none;
-//   position: absolute;
-//   width: 320px;
-//   height: 568px;
-//   background-color: transparent;
-//   z-index: 99;
+.button-by-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 152px;
+  height: 42px;
+  background-color: var(--background-item-colour);
+  border-radius: 10px;
+  border: none;
+  margin-top: 110px;
+  margin-bottom: 64px;
+  margin-left: 84px;
 
-//   &.is-open {
-//     display: block;
-//   }
-// }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  width: 320px;
+  height: 568px;
+  background-color: transparent;
+  z-index: 99;
+
+  &.is-open {
+    display: block;
+  }
+}
 
 .menu {
   margin-top: 100px;
@@ -92,4 +118,81 @@
   &:hover {
     color: var(--tittle-text-colour);
   }
+}
+
+.modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 280px;
+  height: auto;
+  background: var(--primary-text-colour);
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+}
+
+.title {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.group {
+  width: 132px;
+  height: 136px;
+  margin-bottom: 20px;
+  margin-top: 83px;
+  border: 2px solid #96af8c;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:last-child {
+    margin-bottom: 31;
+  }
+}
+
+.images {
+  position: absolute;
+  top: -50;
+}
+
+.coffee {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+  border: none;
+}
+
+.milkshake {
+  border: 2px solid #d6936d;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+}
+
+.form-input {
+  box-sizing: border-box;
+  width: 224px;
+  height: 32px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: var(--tittle-text-colou);
 }
