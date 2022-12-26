@@ -1,6 +1,9 @@
 .hero{
     &-container{
         position: relative;
+        @media screen and (min-width: 768px) {
+                display: flex;
+            }
     }
     &-title {
         font-family: "Seymour One";
@@ -12,6 +15,9 @@
         line-height: 1.25;
         letter-spacing: 0.04em;
         margin-top: 50px;
+        @media screen and (min-width: 768px) {
+                margin-top: 12px;
+            }
         @media screen and (max-width: 1199px){
             &--bold{
                 font-size: 34px;
@@ -24,7 +30,6 @@
             max-width: 367px;
         }
     }
-    
     &_button{
         font-family: 'Montserrat';
         font-style: normal;
@@ -71,23 +76,39 @@
             margin-left: 34px;
         }
     }
-    &_content-image{
+    &_plate-thumb {
+        display: none;
+        @media screen and (min-width: 768px){
+            display: flex;
+        }
+    }
+    &_content-image {
         display: none;
         @media screen and (min-width: 768px) {
             display: block;
+            margin-top: 12px;
         }
         @media screen and (min-width: 1200px) {
             
         }
     }
+    &_content-description {
+        width: 139px;
+        margin-left: 32px;
+        margin-top: 27px;
+        font-size: 12px;
+        line-height: 1.4;
+        color: var(--primary-text-colour);
+    }
     &_image{
         margin-left: 65px;
         margin-top: 19px;
         @media screen and (min-width: 768px){
-            margin-left: 376px;
+            margin-left: 53px;
+            margin-top: 20px;
         }
         @media screen and (min-width: 1200px) {
-            margin-left: 636px;
+            margin-left: 60px;
         }
     }
 }
