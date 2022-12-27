@@ -101,16 +101,15 @@
         font-size: 12px;
         line-height: 1.4;
         color: var(--primary-text-colour);
-        &::after{
-            content: "";
-            background-image: url(../);
-        }
         @media screen and (min-width: 1200px) {
             margin-top: 109px;
             margin-left: 16px;
             font-size: 14px;
             width: 200px;
         }
+    }
+    &_content-arrow{
+        fill: var(--primary-text-colour);
     }
     &_image{
         margin-left: 65px;
