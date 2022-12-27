@@ -1,0 +1,45 @@
+<section class="page-header">
+  <div class="page-header__box container">
+    <a class="page-header__logo">
+      <svg class="page-header__icon-logo">
+        <use href="/src/images/svg-header/icon.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <div class="page-header__mobile-menu" id="mobile-menu__container" data-menu>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="/">Home</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link current" href="/">How it’s made?</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="/">Our products</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="/">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <button
+      class="page-header__menu-button"
+      aria-expanded="true"
+      aria-controls="page-header__mobile-menu"
+      data-menu-button
+      aria-label="/"
+      id="/"
+    >
+      <svg aria-label="Переключатель мобільного меню" width="32" height="32">
+        <use
+          class="page-header__icon-menu"
+          href="/src/images/svg-header/icon.svg#icon-menu"
+        ></use>
+        <use
+          class="page-header__icon-close"
+          href="/src/images/svg-header/icon.svg#icon-close"
+        ></use>
+      </svg>
+    </button>
+  </div>
+</section>
+<script src="/src/js/mobile-menu.js"></script>
