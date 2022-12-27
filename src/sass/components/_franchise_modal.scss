@@ -1,0 +1,192 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 750ms, visibility 750ms;
+  }
+  .backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  
+  .modal__franchise {
+    @media screen and (min-width: 320px) {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      padding-top: 28px;
+      padding-left: 28px;
+      padding-right: 28px;
+      padding-bottom: 28px;
+      transform: translate(-50%, -50%);
+      width: 280px;
+      height: 674px;
+      background-color:  #FCFCFC;;
+      border-radius: 10px;
+      border: 2px solid #F8D24E;;
+      transform: translate(-50%, -50%) scale(1);
+      transition: transform var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+     }
+
+     @media screen and (min-width: 768px) {
+      width: 568px;
+      height: 668px;
+      padding-top: 32px;
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-bottom: 32px;
+      } 
+     
+    }
+    .modal__btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      cursor: pointer;
+      background-color: none;
+      transition: fill var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+    }
+   .form__title {
+      @media screen and(min-width: 320px) {
+        font-family: 'Seymour One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center; 
+        color: #131313;  
+        margin-bottom: 20px;
+      }
+      @media screen and(min-width: 768px) {
+      margin-bottom: 24px;  
+      font-size: 20px;
+      line-height: 28px;
+      }
+  }
+  .form__text {
+    @media screen and(min-width: 320px) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      font-family: 'Montserrat';
+      text-align: left;
+      color: #131313;
+      margin-bottom: 24px;
+    }
+    @media screen and(min-width: 768px) {
+      margin-bottom: 32px;
+      font-size: 16px;
+     }
+  }
+  
+  .form__input {
+      width: 224px;
+      height: 32px;
+      padding-left: 12px;
+      background: rgba(248, 210, 78, 0.1);
+      border: 1px solid #84A178;
+      border-radius: 10px;
+      transition: border-color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+      margin-bottom: 12px;
+  
+      @media screen and(min-width: 768px) {
+      width: 368px;
+      height: 42px;
+      margin-bottom: 16px;
+      } 
+    }
+
+  .form__group {
+      width: 368px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  .form__message {
+      width: 224px;
+      height: 32px;
+      padding-left: 12px;
+      background: rgba(248, 210, 78, 0.1);
+      border: 1px solid #84A178;
+      border-radius: 10px;
+      transition: border-color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+      margin-bottom: 24px;
+      @media screen and(min-width: 768px) {
+      margin-bottom: 32px; 
+      height: 64px;
+      width: 368px;
+      }   
+      }
+  
+      
+  .form__btn {
+      display: block;
+      margin: 0px auto;
+     
+      line-height: calc(15 / 12);
+      letter-spacing: 00.06em;
+      color: #131313;
+      background-color:#F8D24E;;
+      border-radius: 4px;
+      border: 1px solid #F8D24E;;
+     
+      text-align: center;
+      align-items: center;
+      padding-left: 34px;
+      padding-top: 12px;
+      padding-right: 34px;
+      padding-bottom: 12px;
+      cursor: pointer;
+  
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      
+  
+    @media screen and(min-width: 768px) {
+        font-size: 14px; 
+        line-height: calc(17 / 14);
+        }   
+    }
+   
+  .form__input::placeholder {
+  font-size: 12px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  color: #131313;
+  
+  @media screen and(min-width: 768px) {
+  font-size: 14px;
+  }    
+  }
+  .form__message::placeholder {
+    top: 8px;
+    font-size: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    color: #131313;
+    
+    @media screen and(min-width: 768px) {
+    font-size: 14px;
+    }   
+    
+    } 
+  
