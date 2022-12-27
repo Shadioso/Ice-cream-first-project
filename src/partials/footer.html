@@ -81,13 +81,17 @@
       </ul>
     </section>
   </div>
+  <div class="footer__button">
+  <button data-modal-open type="button" class="footer__locations">Our Locations ></button>
+  <button data-modal-open type="button" class="franchise__button">Franchise ></button>
+</div>
 </footer>
 
 <div class="backdrop is-hidden" data-modal>
-  <div class="modal">
+  <div class="modal__franchise">
     <button class="modal__btn" type="button" data-modal-close>
       <svg width="20" height="20">
-        <use href="./images/icon.svg#icon-close"></use>
+        <use href="./images/svg-header/icon.svg#icon-close"></use>
       </svg>
     </button>
 
@@ -140,3 +144,23 @@
     </form>
   </div>
   </div>
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="locations__modal">
+      <button class="modal__btn" type="button" data-modal-close>
+        <svg width="20" height="20">
+          <use href="./images/svg-header/icon.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <strong class="locations__title">Our Locations</strong>
+     
+   <div class="locations__maps" >
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82744.55878310901!2d34.48702656570876!3d49.6021344732009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d825e425e6ba6b%3A0xcf3e6bdfb9e4ca82!2sPoltava%2C%20Poltavska%2C%2036000!5e0!3m2!1spt-PT!2sua!4v1672116221381!5m2!1spt-PT!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+  </div>
+          <a class="contacts__maps" href="https://goo.gl/maps/o1tNzHWq9VMVF8fd7"
+          >Open map</a>  
+       
+    </div>
+    </div>

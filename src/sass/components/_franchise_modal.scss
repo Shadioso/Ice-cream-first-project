@@ -14,7 +14,7 @@
     visibility: hidden;
   }
   
-  .modal {
+  .modal__franchise {
     @media screen and (min-width: 320px) {
       display: block;
       position: absolute;
@@ -54,10 +54,8 @@
       align-items: center;
       justify-content: center;
       padding: 0;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      border-radius: 50%;
       cursor: pointer;
-      background-color: #ffffff;
+      background-color: none;
       transition: fill var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
     }
    .form__title {
@@ -74,7 +72,6 @@
         margin-bottom: 20px;
       }
       @media screen and(min-width: 768px) {
-      font-style: normal;
       margin-bottom: 24px;  
       font-size: 20px;
       line-height: 28px;
@@ -91,8 +88,8 @@
       margin-bottom: 24px;
     }
     @media screen and(min-width: 768px) {
-    margin-bottom: 32px;
-    font-size: 16px;
+      margin-bottom: 32px;
+      font-size: 16px;
      }
   }
   
@@ -134,20 +131,7 @@
       }   
       }
   
-      .form__message::placeholder {
-        top: 8px;
-        font-size: 12px;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%;
-        color: #131313;
-        
-        @media screen and(min-width: 768px) {
-        font-size: 14px;
-        }   
-        
-        }
+      
   .form__btn {
       display: block;
       margin: 0px auto;
@@ -171,8 +155,12 @@
       font-style: normal;
       font-weight: 600;
       font-size: 12px;
-      line-height: 15px;
-      display: flex;
+      
+  
+    @media screen and(min-width: 768px) {
+        font-size: 14px; 
+        line-height: calc(17 / 14);
+        }   
     }
    
   .form__input::placeholder {
@@ -187,16 +175,18 @@
   font-size: 14px;
   }    
   }
-  
-  .form__btn {
-    @media screen and(min-width: 320px)and(min-width: 767px) {
-    display: block; 
-    margin-bottom: px ;
-    margin-top: 20px;
-  }
+  .form__message::placeholder {
+    top: 8px;
+    font-size: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    color: #131313;
+    
     @media screen and(min-width: 768px) {
-      display: block;
-      margin: 0 auto;
+    font-size: 14px;
     }   
-  }
-   
+    
+    } 
+  
