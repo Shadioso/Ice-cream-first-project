@@ -10,7 +10,7 @@
         font-weight: 400;
         color: var(--primary-text-colour);
         text-transform: uppercase;
-        max-width: 247px;
+        // max-width: 247px;
         font-size: 26px;
         line-height: 1.25;
         letter-spacing: 0.04em;
@@ -88,15 +88,17 @@
         @media screen and (min-width: 768px) {
             display: block;
             margin-top: 12px;
+            width: 152px;
         }
         @media screen and (min-width: 1200px) {
             margin-top: 42px;
+            width: 225px;
         }
     }
     &_content-description {
         width: 139px;
         margin-left: 32px;
-        margin-top: 27px;
+        margin-top: 39px;
         font-size: 12px;
         line-height: 1.4;
         color: var(--primary-text-colour);
@@ -121,16 +123,36 @@
     }
     &_location{
         display: none;
+        margin-left: 14px;
+        margin-top: 28px;
         @media screen and (min-width: 768px) {
             display: block;
         }
+        &-list{
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+        }
         &-dozens{
+            display: block;
+            font-family: 'Montserrat';
+            font-style: normal;
             font-weight: 900;
-                font-size: 28px;
-                line-height: 34px;
-                text-align: right;
-                letter-spacing: 0.04em;
-                text-transform: uppercase;
+            font-size: 28px;
+            line-height: 1.21;
+            text-align: right;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            @media screen and (min-width: 1200px) {
+                font-size: 46px;
+            }
+        }
+        &-description{
+            font-size: 8px;
+            line-height: 1.25;
+            text-align: right;
+            color: var(--primary-text-colour);
+            width: 46px;
         }
     }
 }
