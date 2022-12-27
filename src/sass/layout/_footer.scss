@@ -188,6 +188,9 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (max-width: 767px) {
+    margin-top: 20px;
+  }
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -207,14 +210,17 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-
+  min-width: 196px;
+  height: 42px;
   display: flex;
   align-items: center;
   text-align: center;
 
   color: #131313;
-  background: #f8d24e;
+  border: 2px solid var(--background-item-colour);
   border-radius: 10px;
+  background: #f8d24e;
+
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 40px;
@@ -237,10 +243,12 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-
+  background-color: var(--background-colour);
   display: flex;
   align-items: center;
   text-align: center;
+  min-width: 196px;
+  height: 42px;
 
   color: #000000;
 
@@ -249,7 +257,12 @@
   padding-left: 55px;
   padding-right: 70px;
 
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--background-item-colour);
+  border-radius: 10px;
+  @media screen and (max-width: 767px) {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
 }
 .franchise__button:hover {
   border: 2px solid #0a8817;
