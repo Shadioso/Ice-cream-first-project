@@ -1,9 +1,25 @@
 .hero{
     &-container{
         position: relative;
+        background-size: contain;background-repeat: no-repeat;
+        background-position: bottom;
+        background-image: url(../images/hero/hero-dots-mob.png);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+            background-image: url(../images/hero/hero-dots-mob@2x.png);
+        }
         @media screen and (min-width: 768px) {
-                display: flex;
+            display: flex;
+            background-image: url(../images/hero/hero-dots-tabl.png);
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background-image: url(../images/hero/hero-dots-tabl@2x.png);
             }
+        }
+        @media screen and (min-width: 1200px) {
+            background-image: url(../images/hero/hero-dots-desk.png);
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background-image: url(../images/hero/hero-dots-desk@2x.png);
+            }
+        }
     }
     &-title {
         font-family: "Seymour One";
@@ -44,6 +60,7 @@
         background-color: transparent;
         border: 2px solid var(--background-item-colour);
         border-radius: 8px;
+        cursor: pointer;
         &:hover{
             border: 2px solid var(--accent-text-colour);
         }
@@ -61,8 +78,6 @@
     &_link{
         margin-left: 12px;
         text-decoration: underline;
-        font-family: 'Montserrat';
-        font-style: normal;
         font-weight: 600;
         font-size: 12px;
         line-height: 1.25;
@@ -147,8 +162,6 @@
         }
         &-dozens{
             display: block;
-            font-family: 'Montserrat';
-            font-style: normal;
             font-weight: 900;
             font-size: 28px;
             line-height: 1.21;
