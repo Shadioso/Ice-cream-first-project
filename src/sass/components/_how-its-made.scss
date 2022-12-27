@@ -153,3 +153,72 @@
 }
 
 
+
+// Стили иконок внизу добалены Валерием
+.howmade-list {
+    display: block;
+    margin-top: 50px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      max-width: 768px;
+      margin-top: 60px;
+  }    
+  @media screen and (min-width: 1200px) {
+      max-width: 1200px; 
+  }
+  &__item {
+    margin-bottom: 28px;
+    width: 100%;  
+      @media screen and (min-width: 768px) {
+      width: 152px;
+      margin-right: 80px;
+      margin-bottom: 0px;
+      }  
+      @media screen and (min-width: 1200px) {
+        width: 368px;
+        margin-right: 32px;
+      }
+  }
+    &__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 16px;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+        }
+        @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+        }
+    }
+    &__icon--size {
+      width: 50px;
+      height: 50px;
+    }
+    &__titles {
+      margin-bottom: 16px;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 12px;
+        }
+      text-align: left;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: calc(52 / 48);
+      color: var(--primary-text-colour);
+      text-align: center;        
+    }
+    &__text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: calc(24 / 14);
+      color: var(--primary-text-colour);
+      text-align: center;
+    }
+}
+    
+.howmade-list__item:last-child {
+    margin-bottom: 0px;
+    margin-right: 0px;
+} 
+
