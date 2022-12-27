@@ -1,16 +1,31 @@
 .hero{
     &-container{
         position: relative;
+        background-size: contain;background-repeat: no-repeat;
+        background-position: bottom;
+        background-image: url(../images/hero/hero-dots-mob.png);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+            background-image: url(../images/hero/hero-dots-mob@2x.png);
+        }
         @media screen and (min-width: 768px) {
-                display: flex;
+            display: flex;
+            background-image: url(../images/hero/hero-dots-tabl.png);
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background-image: url(../images/hero/hero-dots-tabl@2x.png);
             }
+        }
+        @media screen and (min-width: 1200px) {
+            background-image: url(../images/hero/hero-dots-desk.png);
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background-image: url(../images/hero/hero-dots-desk@2x.png);
+            }
+        }
     }
     &-title {
         font-family: "Seymour One";
         font-weight: 400;
         color: var(--primary-text-colour);
         text-transform: uppercase;
-        max-width: 247px;
         font-size: 26px;
         line-height: 1.25;
         letter-spacing: 0.04em;
@@ -32,11 +47,9 @@
         }
     }
     &_button{
-        font-family: 'Montserrat';
-        font-style: normal;
         font-weight: 600;
         font-size: 14px;
-        line-height: 18px;
+        line-height: 1.28;
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -47,6 +60,7 @@
         background-color: transparent;
         border: 2px solid var(--background-item-colour);
         border-radius: 8px;
+        cursor: pointer;
         &:hover{
             border: 2px solid var(--accent-text-colour);
         }
@@ -64,8 +78,6 @@
     &_link{
         margin-left: 12px;
         text-decoration: underline;
-        font-family: 'Montserrat';
-        font-style: normal;
         font-weight: 600;
         font-size: 12px;
         line-height: 1.25;
@@ -88,23 +100,34 @@
         @media screen and (min-width: 768px) {
             display: block;
             margin-top: 12px;
+            width: 152px;
         }
         @media screen and (min-width: 1200px) {
             margin-top: 42px;
+            width: 225px;
         }
     }
     &_content-description {
         width: 139px;
         margin-left: 32px;
-        margin-top: 27px;
+        margin-top: 39px;
+        margin-bottom: 12px;
         font-size: 12px;
         line-height: 1.4;
         color: var(--primary-text-colour);
         @media screen and (min-width: 1200px) {
             margin-top: 109px;
             margin-left: 16px;
+            margin-bottom: 24px;
             font-size: 14px;
             width: 200px;
+        }
+    }
+    &_content-arrow{
+        fill: var(--primary-text-colour);
+        margin-left: 32px;
+        @media screen and (min-width: 1200px) {
+            margin-left: 16px;
         }
     }
     &_image{
@@ -121,36 +144,45 @@
     }
     &_location{
         display: none;
+        margin-left: 14px;
+        margin-top: 28px;
         @media screen and (min-width: 768px) {
             display: block;
         }
+        @media screen and (min-width: 1200px){
+            margin-top: 56px;
+        }
+        &-list{
+            &:not(:first-child) {
+                margin-top: 20px;
+                @media screen and (min-width: 1200px){
+                    margin-top: 16px;
+                }
+            }
+        }
         &-dozens{
+            display: block;
             font-weight: 900;
-                font-size: 28px;
-                line-height: 34px;
-                text-align: right;
-                letter-spacing: 0.04em;
-                text-transform: uppercase;
+            font-size: 28px;
+            line-height: 1.21;
+            text-align: right;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            @media screen and (min-width: 1200px) {
+                font-size: 46px;
+            }
+        }
+        &-description{
+            font-size: 8px;
+            line-height: 1.25;
+            text-align: right;
+            color: var(--primary-text-colour);
+            width: 46px;
+            @media screen and (min-width: 1200px){
+                font-size: 14px;
+                line-height: 1.21;
+                width: 79px;
+            }
         }
     }
 }
-
-
-// .header_link--akcent::after {
-//     content: "";
-//     display: block;
-//     position: absolute;
-//     bottom: -1px;
-//     width: 100%;
-//     height: 4px;
-//     background: #2196f3;
-//     border-radius: 2px;
-// }
-
-// .checkbox:checked+.checkbox-icon {
-//     background: var(--akcent-color);
-//     background-image: url(../images/icon-check.svg);
-//     background-size: contain;
-//     background-origin: border-box;
-//     border-color: var(--akcent-color);
-// }
