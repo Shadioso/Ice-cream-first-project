@@ -2,25 +2,20 @@
   <div class="container">
     <div class="how-its-made__titles titles">
       <h4 class="titles__small-title">tradition and love</h4>
-      <h1 class="titles__main-title">how it’s made?</h1>
+      <h1 class="titles__main-title" id="h1d1">how it’s made?</h1>
     </div>
     <div class="how-its-made__info info">
       <div class="info__image-wrapper">
-        <picture>
-          <source
-            srcset="./images/cow.png 1x, ./images/cow@2x.png 2x"
-            class="cow-image"
-          />
-          <source
-            srcset="./images/cow-tablet.png 1x, ./images/cow-tablet@2x.png 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="./images/cow-desktop.png 1x, ./images/cow-desktop@2x.png 2x"
-            media="(min-width: 1200px)"
-          />
-          <img src="./images/cow.png" alt="cow" class="cow-image" />
-        </picture>
+        <img
+          srcset="
+            /src/images/products/cow-491.png   491w,
+            /src/images/products/cow-982.png   982w,
+            /src/images/products/cow-1473.png 1473w
+          "
+          alt="фото корови"
+          src="/src/images/products/cow-491.png"
+          sizes=" (min-width:768px) 50vw, 100vw"
+        />
       </div>
       <div class="info__text">
         <p class="paragraph first-paragraph">
@@ -48,9 +43,10 @@
     <ul class="howmade-list list">
       <li class="howmade-list__item">
         <div class="howmade-list__icon">
-          <img class="howmade-list__icon--size" 
-          src="./images/icon-cow.png" alt="Icon cow"/>
-      </div>
+          <svg class="howmade__icon" width="36" height="36">
+            <use href="/src/images/symbol-defs.svg#icon-cow"></use>
+          </svg>
+        </div>
         <h3 class="howmade-list__titles">721</h3>
         <p class="howmade-list__text">
           Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
@@ -58,9 +54,10 @@
       </li>
       <li class="howmade-list__item">
         <div class="howmade-list__icon">
-          <img class="howmade-list__icon--size" 
-          src="./images/icon-weight.png" alt="Icon weight"/>
-      </div>
+          <svg class="howmade__icon" width="36" height="36">
+            <use href="/src/images/symbol-defs.svg#icon-weight"></use>
+          </svg>
+        </div>
         <h3 class="howmade-list__titles">16kg</h3>
         <p class="howmade-list__text">
           Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
@@ -68,9 +65,10 @@
       </li>
       <li class="howmade-list__item">
         <div class="howmade-list__icon">
-          <img class="howmade-list__icon--size" 
-          src="./images/icon-crema.png" alt="Icon crema"/>
-      </div>
+          <svg class="howmade__icon" width="36" height="36">
+            <use href="/src/images/symbol-defs.svg#icon-ice-crema"></use>
+          </svg>
+        </div>
         <h3 class="howmade-list__titles">84</h3>
         <p class="howmade-list__text">
           Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
@@ -85,19 +83,30 @@
       <button class="modal__close" data-modal-close>
         <svg class="modal__svg" width="24" height="24">
           <use href="./images/button-close.svg"></use>
-        </svg>  
+        </svg>
       </button>
       <p class="modal-title">How it’s made?</p>
-      <iframe class="modal_frame" width="100%" src="https://www.youtube.com/embed/MErzwmig4Yo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p class="modal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+      <iframe
+        class="modal_frame"
+        width="100%"
+        src="https://www.youtube.com/embed/MErzwmig4Yo"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <p class="modal-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      </p>
     </div>
   </div>
   <script src="./js/our-locations-modal.js"></script>
   <script
-  defer
-  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-  crossorigin="anonymous"
-></script>
-
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
 </section>
