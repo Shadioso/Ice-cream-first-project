@@ -20,6 +20,12 @@
           <a class="mobile-menu__link" href="/">Contact</a>
         </li>
       </ul>
+            <button type="button" class="button-by-menu">
+              Buy now
+              <svg width="12" height="12">
+                <use class="logo-by-menu" href="./images/burger.svg#icon-button"></use>
+              </svg>
+            </button>
     </div>
     <button
       class="page-header__menu-button"
@@ -41,5 +47,64 @@
       </svg>
     </button>
   </div>
+      <button type="button" class="button-by" data-modal-open>
+        Buy now
+        <svg width="12" height="12">
+          <use class="logo-by" href="./images/burger.svg#icon-button"></use>
+        </svg>
+      </button>
 </section>
+<div class="modal-backgrop-header is-hidden" data-modal>
+  <div class="modal-header">
+    <h1 class="title">Buy now</h1>
+    <ul class="modal-list">
+      <li class="modal-list-li">
+        <div class="cream group">
+          <img class="images" srcset="
+              ../src/images/modal-img1_132.png 132w,
+              ../src/images/modal-img1_262.png 264w
+            " alt="ice cream" width="132" height="139" />
+          <p class="ice-text">ice cream</p>
+        </div>
+      </li>
+      <li class="modal-list-li">
+        <div class="coffee group">
+          <img class="images" srcset="
+              ../src/images/modal-img2_132.png 132w,
+              ../src/images/modal-img2_264.png 264w
+            " alt="ice coffee" width="132" height="139" />
+          <p class="ice-text">ice coffee</p>
+        </div>
+      </li>
+      <li class="modal-list-li">
+        <div class="milkshake group">
+          <img class="images" srcset="
+              ../src/images/modal-img3_132.png 132w,
+              ../src/images/modal-img3_264.png 264w
+            " alt="milkshake" width="132" height="139" />
+          <p class="ice-text">milkshake</p>
+        </div>
+      </li>
+    </ul>
+    <form class="form-header">
+      <div class="name">
+        <input class="form-input" type="text" name="Name" id="username" placeholder="Name" />
+      </div>
+      <div class="phone">
+        <input class="form-input" type="tel" name="Phone" id="Phone" placeholder="Phone" />
+      </div>
+      <div class="comment">
+        <textarea class="form-input textarea" type="textarea" rows="5" name="textarea" id="textarea"
+          placeholder="Comment"></textarea>
+      </div>
+      <button class="agree" type="submit">Submit</button>
+      <button class="close-sing" data-modal-close>
+        <svg class="close" width="20" height="20">
+          <use href="./images/burger.svg#icon-modal-close"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
+</div>
 <script src="/src/js/mobile-menu.js"></script>
+<script src="/src/js/header-modal.js"></script>
