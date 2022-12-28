@@ -1,29 +1,84 @@
-<section class="feedback overlay">
+<section class="feedback overlay" data-slider="team-slider">
   <div class="container">
-    <img
-      srcset="
-        ./images/feedback-icecream.jpg   1x,
-        ./images/feedback-icecream2x.jpg 2x
-      "
-      src="./images/feedback-icecream.jpg"
-      alt="ice-cream"
-      width="280"
-      class="feedback__picture"
-    />
-    <div class="feedback__slider">
-      <img
-        srcset="./images/Emily.jpg 1x, ./images/Emily2x.jpg 2x"
-        src="./images/Emily.jpg"
-        alt="girl"
-        width="85"
-        class="feedback__person"
-      />
-      <p class="feedback__response">
-        I love visiting your cafe. You prepare the most delicious ice cream in
-        Los Angeles! In addition, you have beautiful serving, cozy atmosphere
-        and polite staff.
-      </p>
-      <p class="feedback__name">Emily, Los Angeles</p>
+    <div class="swiper">
+      <ul class="swiper-wrapper">
+        <li class="feedback__slider swiper-slide">
+          <img
+            srcset="
+              ./images/feedback-icecream.jpg   1x,
+              ./images/feedback-icecream2x.jpg 2x
+            "
+            src="./images/feedback-icecream.jpg"
+            alt="ice-cream"
+            width="280"
+            class="feedback__picture"
+          />
+          <img
+            srcset="./images/Emily.jpg 1x, ./images/Emily2x.jpg 2x"
+            src="./images/Emily.jpg"
+            alt="girl"
+            width="85"
+            class="feedback__person"
+          />
+          <p class="feedback__response">
+            I love visiting your cafe. You prepare the most delicious ice cream
+            in Los Angeles! In addition, you have beautiful serving, cozy
+            atmosphere and polite staff.
+          </p>
+          <p class="feedback__name">Emily, Los Angeles</p>
+        </li>
+
+        <li class="feedback__slider swiper-slide">
+          <img
+            srcset="
+              ./images/feedback-icecream2.jpg    1x,
+              ./images/feedback-icecream2.2x.jpg 2x
+            "
+            src="./images/feedback-icecream2.jpg"
+            alt="ice-cream"
+            width="280"
+            class="feedback__picture"
+          />
+          <img
+            srcset="./images/Bryan.jpg 1x, ./images/Bryan2x.jpg 2x"
+            src="./images/Bryan.jpg"
+            alt="girl"
+            width="85"
+            class="feedback__person"
+          />
+          <p class="feedback__response">
+            Every day we come to you with friends after classes in college. We
+            love your ice cream and casual atmosphere!
+          </p>
+          <p class="feedback__name">Bryan, New-York</p>
+        </li>
+
+        <li class="feedback__slider swiper-slide">
+          <img
+            srcset="
+              ./images/feedback-icecream3.jpg    1x,
+              ./images/feedback-icecream3.2x.jpg 2x
+            "
+            src="./images/feedback-icecream3.jpg"
+            alt="ice-cream"
+            width="280"
+            class="feedback__picture"
+          />
+          <img
+            srcset="./images/Diana.jpg 1x, ./images/Diana2x.jpg 2x"
+            src="./images/Diana.jpg"
+            alt="girl"
+            width="85"
+            class="feedback__person"
+          />
+          <p class="feedback__response">
+            Ice cream is my passion! I love your chocolate hazelnut ice cream!
+            And I really like the excellent service - always served politely and
+            quickly!
+          </p>
+          <p class="feedback__name">Diana, Chicago</p>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
