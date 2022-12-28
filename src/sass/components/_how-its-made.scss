@@ -2,6 +2,7 @@
   background: var(--background-colour);
   padding-top: 60px;
   padding-bottom: 178px;
+  z-index: 999;
 
   &__info {
     display: flex;
