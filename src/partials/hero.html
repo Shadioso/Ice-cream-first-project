@@ -4,7 +4,9 @@
       <h1 class="hero-title" id="h4d4">
         ice cream made with <span class="hero-title--bold">passion</span>
       </h1>
-      <button class="hero_button" type="button">Products</button>
+      <button class="hero_button" type="button" data-modal-open="about-modal">
+        Products
+      </button>
       <a class="hero_link" href="">How it’s made?</a>
       <div class="hero_content-thumb">
         <img
@@ -57,7 +59,7 @@
       </li>
     </ul>
   </div>
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop is-hidden" data-modal id="about-modal">
     <div class="modal">
       <button class="modal__button-close" data-modal-close>
         <svg class="modal__close">
@@ -174,8 +176,10 @@
           <button type="submit" class="modal__button-submit">Submit</button>
         </div>
       </form>
-    </div>
+      <!-- </div>
 
     <script type="module" src="/src/js/hero.js"></script>
+  </div> -->
+    </div>
   </div>
 </section>

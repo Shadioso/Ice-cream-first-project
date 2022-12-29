@@ -100,10 +100,18 @@
       </ul>
     </div>
     <div class="footer__button">
-      <button data-modal-open type="button" class="footer__locations">
+      <button
+        data-modal-open="about-mod"
+        type="button"
+        class="footer__locations"
+      >
         Our Locations >
       </button>
-      <button data-modal-open type="button" class="franchise__button">
+      <button
+        data-modal-open="about-mo"
+        type="button"
+        class="franchise__button"
+      >
         Franchise >
       </button>
     </div>
@@ -168,7 +176,7 @@
 
     <h2 class="visually-hidden">Contacts</h2>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal id="about-mo">
       <div class="modal__franchise">
         <button class="modal__btn" type="button" data-modal-close>
           <svg width="20" height="20">
@@ -239,7 +247,7 @@
       </div>
     </div>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal id="about-mod">
       <div class="locations__modal">
         <button class="modal__btn" type="button" data-modal-close>
           <svg width="20" height="20">
@@ -268,4 +276,4 @@
   </div>
 </section>
 
-<script src="/src/js/our-locations-modal.js"></script>
+<!-- <script src="/src/js/our-locations-modal.js"></script> -->
