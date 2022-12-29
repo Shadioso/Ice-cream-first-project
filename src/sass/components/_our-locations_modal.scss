@@ -26,7 +26,6 @@
     padding-bottom: 28px;
     transform: translate(-50%, -50%);
     width: 280px;
-    height: 365px;
     background-color: #fcfcfc;
     border-radius: 10px;
     border: 2px solid #f8d24e;
@@ -56,6 +55,8 @@
   padding: 0;
   cursor: pointer;
   background-color: none;
+  background: transparent;
+  border: none;
   transition: fill var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -80,41 +81,40 @@
 }
 
 .locations__maps {
-  width: 224px;
-  height: 199px;
-
+  margin-bottom: 24px;
   @media screen and(min-width: 768px) {
-    width: 448px;
-    height: 260px;
+    margin-bottom: 36px;
   }
 }
 
 .contacts__maps {
   display: block;
   margin: 0px auto;
-
   line-height: calc(15 / 12);
   letter-spacing: 00.06em;
   color: #131313;
   background-color: #f8d24e;
   border-radius: 4px;
   border: 1px solid #f8d24e;
-
   text-align: center;
   align-items: center;
-  padding-left: 34px;
-  padding-top: 12px;
-  padding-right: 34px;
-  padding-bottom: 12px;
+  padding: 12px 34px;
   cursor: pointer;
-
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 12px;
-
-  @media screen and(min-width: 768px) {
+  width: 142px;
+  @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: calc(17 / 14);
+    width: 154px;
+  }
+}
+.locations__maps-iframe {
+  width: 224px;
+  height: 199px;
+  border-radius: 10px;
+  @media screen and(min-width: 768px) {
+    width: 448px;
+    height: 260px;
   }
 }

@@ -137,8 +137,33 @@
   text-align: center;
   color: #131313;
   margin: 0;
+  margin-bottom: 12px;
   @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: 1.88;
+    margin-bottom: 32px;
   }
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-pagination-bullet {
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.team__pagination.swiper-pagination {
+  bottom: 0;
+}
+.team__pagination .swiper-pagination-bullet {
+  background: #d9d9d9;
+}
+.team__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #84a178;
 }
