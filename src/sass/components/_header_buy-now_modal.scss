@@ -4,6 +4,7 @@
 .button-by {
   width: 152px;
   height: 42px;
+  margin-left: 400px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -295,7 +296,7 @@
   border: none;
   cursor: pointer;
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 1199px) {
     display: none;
   }
 }

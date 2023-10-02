@@ -37,22 +37,16 @@
   z-index: 1002;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
     display: block;
-    margin-left: 440px;
   }
   @media screen and (min-width: 1200px) {
     display: none;
   }
 }
-.page-header__menu-button.is-open {
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    top: 25px;
-    right: 32px;
-  }
-}
+
 .page-header__icon-close {
   display: none;
 }
@@ -137,4 +131,8 @@
     padding-top: 15px;
     padding-bottom: 15px;
   }
+}
+
+body.disable-scroll {
+  overflow: hidden;
 }

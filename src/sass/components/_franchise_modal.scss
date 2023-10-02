@@ -59,7 +59,7 @@
   transition: fill var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__title {
-  @media screen and(min-width: 320px) {
+  @media screen and (min-width: 320px) {
     font-family: 'Seymour One';
     font-style: normal;
     font-weight: 400;
@@ -71,14 +71,14 @@
     color: #131313;
     margin-bottom: 20px;
   }
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 24px;
     font-size: 20px;
     line-height: 28px;
   }
 }
 .form__text {
-  @media screen and(min-width: 320px) {
+  @media screen and (min-width: 320px) {
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
@@ -87,7 +87,7 @@
     color: #131313;
     margin-bottom: 24px;
   }
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 32px;
     font-size: 16px;
   }
@@ -104,7 +104,7 @@
     cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 12px;
 
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 368px;
     height: 42px;
     margin-bottom: 16px;
@@ -126,7 +126,7 @@
   transition: border-color var(--transition-duration)
     cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 24px;
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 32px;
     height: 64px;
     width: 368px;
@@ -157,7 +157,7 @@
   font-weight: 600;
   font-size: 12px;
 
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: calc(17 / 14);
   }
@@ -171,7 +171,7 @@
   line-height: 140%;
   color: #131313;
 
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     font-size: 14px;
   }
 }
@@ -184,7 +184,7 @@
   line-height: 140%;
   color: #131313;
 
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     font-size: 14px;
   }
 }
