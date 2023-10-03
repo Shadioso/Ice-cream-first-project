@@ -6,7 +6,6 @@
   const openMenu = () => {
     const expanded =
       menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
-
     menuBtnRef.classList.toggle('is-open');
     menuBtnRef.setAttribute('aria-expanded', !expanded);
     body.classList.toggle(`disable-scroll`);

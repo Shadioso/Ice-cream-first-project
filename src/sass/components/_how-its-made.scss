@@ -255,6 +255,7 @@
 .modal-read_more.is-hidden .modal {
   transform: scale(1);
 }
+// Start
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -266,11 +267,11 @@
   padding-bottom: 32px;
   width: 280px;
   z-index: 1001;
+  top: 55%;
 
   @media screen and (min-width: 768px) {
-    width: 568px;
+    width: 480px;
     position: absolute;
-    top: 85%;
     left: 50%;
   }
 
